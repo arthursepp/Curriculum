@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur Souza Sepp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+
+<body>
+    <div class="modal-container" id="modal_container">
+        <div class="modal">
+            <header>
+                <h1>Localização</h1>
+                <div>
+                    <button type="button" id="closeModal">
+                        <i class="fa fa-times"></i>
+                    </button>
+                </div>
+            </header>
+
+            <div class="modal-body">
+                <div id="gmap"></div>
+            </div>
+            <footer>                
+                <a href="https://www.google.com/maps/place/Cotia+-+SP/@-23.6832317,-47.0286668,12z/data=!3m1!4b1!4m6!3m5!1s0x94cfa8da23eb59c3:0x4c49658ca528197!8m2!3d-23.6026939!4d-46.9194755!16s%2Fg%2F1ymx950_b?entry=ttu&g_ep=EgoyMDI1MDgxMS4wIKXMDSoASAFQAw%3D%3D">
+                    Ver no maps
+                </a>
+            </footer>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="main-header">
+            <h1>Arthur Souza Sepp</h1>
+            <h2>OBJETIVO: DESENVOLVEDOR JÚNIOR</h2>
+        </div>
+
+        <!-- * Contato: -->
+        <nav>
+            <div class="sub-nav">
+                <a href="#" id="phone">
+                    <i class="fa fa-phone"></i>
+                    <span>(11) 9 3929-0818</span>
+                </a>
+                <a href="#" id="email">
+                    <i class="fa fa-envelope"></i>
+                    <span>dev.sepp@outlook.com</span>
+                </a>
+                <button id="mapa">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Cotia, SP</span>
+                </button>
+                <a href="https://github.com/arthursepp" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                    <span>Github</span>
+                </a>
+            </div>
+        </nav>
+
+        <div class="generic-container">
+            <div class="generic-sub-container">
+                <h3>RESUMO PROFISSIONAL</h3>
+                <hr>
+                <p>
+                    Desenvolvedor full-stack, com foco em soluções multiplataforma, perfil colaborativo,
+                    facilidade para aprender novas tecnologias e habilidade para atuar em diferentes etapas
+                    do desenvolvimento, incluindo automação, análise de dados e criação de sistemas web e mobile.
+                </p>
+            </div>
+
+            <div class="generic-sub-container">
+                <h3>FORMAÇÃO ACADÊMICA</h3>
+                <hr>
+                <ul>
+                    <li>
+                        <span>
+                            <b>
+                                Graduação em Desenvolvimento de Software Multiplataforma
+                            </b>
+                        </span>
+                        <p>
+                            FATEC Cotia | Previsão de conclusão em 12/2026
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="generic-sub-container">
+                <h3>HISTÓRICO PROFISSIONAL</h3>
+                <hr>
+                <ul>
+                    <li>
+                        <span>
+                            <b>
+                                Estagiário em Desenvolvimento de Software
+                            </b>
+                            - PRODESP (04/2024 - 07/2025)
+                        </span>
+                        <p>
+                            Atuação em automação de processos, desenvolvimento de sistemas web,
+                            suporte em projetos full-stack e análise de dados, com participação
+                            em entregas colaborativas e foco em melhorias contínuas.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="generic-sub-container-last">
+                <h3>COMPETÊNCIAS</h3>
+                <hr>
+                <ul>
+                    <li>
+                        <span>
+                            <b>
+                                Linguagens e frameworks web:
+                            </b>
+                            Django, Flask, Node.js,
+                            React.js, React Native, HTML, CSS (Tailwind CSS, Bootstrap e síntaxe CSS)
+                            e JavaScript.
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <b>
+                                Banco de Dados:
+                            </b>
+                            MySQL, MSSQL, MongoDB.
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <b>
+                                Linguagens Desktop:
+                            </b>
+                            Java, Python e C.
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <b>
+                                Dados:
+                            </b>
+                            PySpark, numpy (básico), pandas (básico)
+                        </span>
+                    </li>
+                    <li>
+                        <b>
+                            Inglês intermediário
+                        </b>
+                    </li>
+                    <li>
+                        <b>
+                            Capacidade analítica para resolução de problemas e automação de processos.
+                        </b>
+                    </li>
+                    <li>
+                        <b>
+                            Organização e autonomia no cumprimento de prazos
+                        </b>
+                    </li>
+                    <li>
+                        <b>
+                            Interesse contínuo em aprender novas tecnologias e aprimorar habilidades técnicas
+                        </b>
+                    </li>
+                    <li>
+                        <b>
+                            Comunicação clara para suporte e apresentação de soluções técnicas
+                        </b>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>    
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
