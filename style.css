@@ -8,8 +8,10 @@ body {
 }
 
 .content {
-    background-color: #FFFFFF;
-    margin: 0 350px 0 350px;
+    background-color: #FFFFFF;    
+    margin: 0 auto;
+    width: 800px;
+    height: 100%;
 }
 
 .main-header {
@@ -200,4 +202,22 @@ footer {
 #gmap {
     height: 500px;
     width: 100%;
+}
+
+@media (max-width: 375px) {
+    
+    .content {
+        width: 375px;
+    }
+    
+    .main-header {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;        
+    }
+
+    .sub-nav {
+        display: flex;
+        flex-direction: column;
+    }
 }
